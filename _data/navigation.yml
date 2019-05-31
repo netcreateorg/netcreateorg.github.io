@@ -1,0 +1,27 @@
+- title: Home
+  url: "/"
+  side: left
+
+- title: Why Net.Create
+  url: "/why/"
+  side: left
+
+- title: Activities
+  url: "/activities/"
+  side: left
+
+- title: Sample Networks
+  url: "/networks/"
+  side: left
+
+- title: "About the Team"
+  url: "/about/"
+  side: right
+
+- title: Download
+  url: "/download/"
+  side: right
+
+- title: "Contact"
+  url: "/contact/"
+  side: right
