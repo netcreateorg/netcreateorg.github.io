@@ -18,21 +18,23 @@ tags:
 #
 ---
 
-Net.Create is funded through the [EAGER program](https://www.nsf.gov/pubs/policydocs/pappguide/nsf09_1/gpg_2.jsp#IID2) at [NSF](https://www.nsf.gov/) under award #[1848655](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1848655).
+To cite Net.Create: Craig, K. & Danish, J. (2018). Net.Create [Computer software]. Netcreate.org (2018).
+
+Net.Create is funded through the [EAGER program](https://www.nsf.gov/pubs/policydocs/pappguide/nsf09_1/gpg_2.jsp#IID2){: target="_blank"} at [NSF](https://www.nsf.gov/) under award #[1848655](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1848655){: target="_blank"}.
 
 ### The Research Team
 
-- [Kalani Craig](http://www.kalanicraig.com), Clinical Assistant Professor of [History](https://history.indiana.edu), and Co-Director of the [Institute for Digital Arts & Humanities](https://idah.indiana.edu) at [Indiana University Bloomington](https://www.indiana.edu).
-- [Joshua Danish](http://www.joshuadanish.com), Associate Professor of [Learning Sciences](https://education.indiana.edu/programs/learning-sciences.html), [School of Education](https://education.indiana.edu) at [Indiana University Bloomington](https://www.indiana.edu).
-- [Ann McCranie](https://iuni.iu.edu/people/person/ann-mccranie), Assistant Director of Research Administration at [Indiana University Network Science Institute](https://iuni.iu.edu) at [Indiana University Bloomington](https://www.indiana.edu).
-- [Cindy Hmelo-Silver](https://education.indiana.edu/about/directory/profiles/hmelo-silver-cindy.html), Barbara B. Jacobs Chair of Education and Technology and Professor of [Learning Sciences](https://education.indiana.edu/programs/learning-sciences.html) and Director of the [Center for Research on Learning & Technology](https://crlt.indiana.edu), [School of Education](https://education.indiana.edu) at [Indiana University Bloomington](https://www.indiana.edu).
-- Research assistants at [Indiana University Bloomington](https://www.indiana.edu).
+- [Kalani Craig](http://www.kalanicraig.com){: target="_blank"}, Ph.D., Clinical Assistant Professor of [History](https://history.indiana.edu){: target="_blank"}, and Co-Director of the [Institute for Digital Arts & Humanities](https://idah.indiana.edu){: target="_blank"} at [Indiana University Bloomington](https://www.indiana.edu){: target="_blank"}.
+- [Joshua Danish](http://www.joshuadanish.com){: target="_blank"}, Ph.D., Associate Professor of [Learning Sciences](https://education.indiana.edu/programs/learning-sciences.html){: target="_blank"}, [School of Education](https://education.indiana.edu){: target="_blank"} at [Indiana University Bloomington](https://www.indiana.edu){: target="_blank"}.
+- [Ann McCranie](https://iuni.iu.edu/people/person/ann-mccranie){: target="_blank"}, Ph.D., Associate Director of [Indiana University Network Science Institute](https://iuni.iu.edu){: target="_blank"} at [Indiana University Bloomington](https://www.indiana.edu){: target="_blank"}.
+- [Cindy Hmelo-Silver](https://education.indiana.edu/about/directory/profiles/hmelo-silver-cindy.html){: target="_blank"}, Ph.D., Barbara B. Jacobs Chair of Education and Technology and Professor of [Learning Sciences](https://education.indiana.edu/programs/learning-sciences.html){: target="_blank"} and Director of the [Center for Research on Learning & Technology](https://crlt.indiana.edu){: target="_blank"}, [School of Education](https://education.indiana.edu){: target="_blank"} at [Indiana University Bloomington](https://www.indiana.edu){: target="_blank"}.
+- [Daniel Story](https://campusdirectory.ucsc.edu/cd_detail?uid=dstory){: target="_blank"}, Ph.D., Digital Scholarship Librarian at [University of California, Santa Cruz](https://www.ucsc.edu/){: target="_blank"}.
+- Research assistants at [Indiana University Bloomington](https://www.indiana.edu){: target="_blank"}.
     - Haesol Bae (Instructional Systems Technology)
     - Megan Humburg (Learning Sciences)
     - Maks Szostalo (History)
-    - Suraj Uttamchandani (Learning Sciences)
-
+    - Suraj Uttamchandani, Ph.D. (Learning Sciences)
 
 ### The Agile Developers
 
-- Software development provided by [Inquirium](http://inquirium.net).
+- Software development provided by [Inquirium](http://inquirium.net){: target="_blank"}.
