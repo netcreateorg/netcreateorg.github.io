@@ -6,6 +6,10 @@
   url: "/why/"
   side: left
 
+- title: Publications
+  url: "/publications/"
+  side: left
+
 - title: Activities
   url: "/activities/"
   side: left
