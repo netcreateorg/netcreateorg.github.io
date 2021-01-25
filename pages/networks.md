@@ -29,3 +29,5 @@ In Spring of 2019, 75 students built a network using [Tacitus' Annals](https://w
 - [The original network produced by students with added factions](/SampleNetworks/2019-02-06_TacitusModularity/#/?ROME-FEB-LQN-ID008&TRACK=NO)
     - While the students were discussing the newly-generated gender network, a member of the instructional team exported data to Gephi and ran a modularity/network-neighborhood report.
     - That information was reimported to Net.Create **live during class** so that students could see divisions in the imperial network. We briefly discussed factions and then students explored the faction network on their own after class.
+    
+We also have two samples of undergraduate research done on a set of objects contributed by the Indiana University Bloomington community and networked using several different network taxonomies at https://historyharvest.indiana.edu/Fall2019/stories/Networks.html
