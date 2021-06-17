@@ -22,4 +22,4 @@ tags:
 We're in the process of working through requirements for a downloadable double-clickable version of Net.Create. If you want to be notified of Net.Create news, please let us know through our [Contact Form](/contact/)
 ### The Command-line Version
 
-Net.Create is built on a Node.JS, React and D3 core and uses npm to manage its packages. If you've got a computer running MacOS, are comfortable with command line work (or willing to experiment), have admin control over your computer, and have a basic understanding of GitHub, we can help. [Contact us](/contact/) for more info.
+Net.Create is built on a Node.JS, React and D3 core and uses npm to manage its packages. If you've got a computer running MacOS, are comfortable with command line work (or willing to experiment), have admin control over your computer, and have a basic understanding of GitHub, you can fork the repo at [http://github.com/netcreateorg/netcreate-2018/](http://github.com/netcreateorg/netcreate-2018/)
