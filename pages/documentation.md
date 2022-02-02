@@ -134,7 +134,7 @@ There are a few points along the way where users less familiar with the command 
 
   - Finally, type “exit” in your terminal window, quit out of the terminal, and then reopen your terminal window.
 
-# Configuring Digital Ocean servers with Net.Create dependencies
+## Configuring Digital Ocean servers with Net.Create dependencies
 
 1.  In Digital Ocean: Create -> Droplet (for full instructions see [https://docs.digitalocean.com/products/droplets/how-to/create/](https://www.google.com/url?q=https://docs.digitalocean.com/products/droplets/how-to/create/&sa=D&source=editors&ust=1643819696085980&usg=AOvVaw04vE3vdefbVxqVxOLIuybQ) ) ![](images/image4.png) 
 2.  Select the following settings:
