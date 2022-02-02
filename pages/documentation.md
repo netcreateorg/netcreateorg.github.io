@@ -83,22 +83,22 @@ Software developers use the word “environment” to handwave at a whole bunch 
 
 For software packages like Net.Create, you’ll need to explicitly control those environment variables by using the command line to control your computer (instead of point-and-click interactions). The instructions here use the command line to install software in specific places, adding configuration information to hidden system files.
 
-The Net.Create environment and its dependencies
+# The Net.Create environment and its dependencies
 ===============================================
 
 Net.Create requires several software packages to run. That is, it has the following dependencies:
 
-*   MacOS or Digital Ocean  (a Linux-based operating system). We suggest Digital Ocean for folks who want to access Net.Create from many different places. Net.Create does not run on Windows machines (yet).
-*   NodeJS  is a set of Javascript libraries that build the network nodes and edges, let users drag the graph around and hide/display the Node/Edge tables.
-*   Node Package Manager (npm) and Brunch  help keep those libraries up to date
-*   XCode  provides the programming infrastructure that helps MacOS run these libraries and javascript packages.
+-   MacOS or Digital Ocean  (a Linux-based operating system). We suggest Digital Ocean for folks who want to access Net.Create from many different places. Net.Create does not run on Windows machines (yet).
+-   NodeJS  is a set of Javascript libraries that build the network nodes and edges, let users drag the graph around and hide/display the Node/Edge tables.
+-   Node Package Manager (npm) and Brunch  help keep those libraries up to date
+-   XCode  provides the programming infrastructure that helps MacOS run these libraries and javascript packages.
 
-Choosing Your Net.Create Install Platform
+# Choosing Your Net.Create Install Platform
 =========================================
 
 Net.Create can run on either MacOS or Digital Ocean. Follow one of those two paths in this section before you move on to the “Installing Net.Create” section.
 
-Installing Net.Create dependencies on MacOS
+## Installing Net.Create dependencies on MacOS
 -------------------------------------------
 
 Net.Create isn’t double-clickable, either when you run it or when you install it. Instead, it uses a set of commands typed in at the command line. Installing Net.Create requires a number of these commands in sequence. Running it only requires 1.
@@ -122,21 +122,21 @@ There are a few points along the way where users less familiar with the command 
 -  Step 6 has two variations.
   - First check the NVM install page to make sure you are using the most recent version.
   - Then, look for what programmers call a pipe, the vertical line after “install.sh” that looks like this: | . Pipes separate the main part of a command in the command line from an extension of that command that might have some variances from system to system. Adjust what comes after it based on your MacOS.
-*   Earlier than Catalina:
+  - Earlier than Catalina:
 
-*   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
-*   Catalina or later:
+  - Catalina or later:
 
-*   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh
 
-*   Remember that spaces also act as separators in the command line. You’ll need a space before and after the pipe.
+  - Remember that spaces also act as separators in the command line. You’ll need a space before and after the pipe.
 
-*   If step 8 fails, you may need to check your /User/yourname/ folder for a file called .zshrc or .bash\_profile .
+- If step 8 fails, you may need to check your /User/yourname/ folder for a file called .zshrc or .bash\_profile .
 
-*   These files are hidden by default. Open your main user directory and press Command + Shift + . (period) to show hidden files.
-*   You will have either .zshrc or .bash\_profile in that folder. Right click it and use the “Open With” option to open this file with the application “Text Edit”
-*   If this file is blank, you need to add four lines of environment variables (copied and pasted below) and then save the file
+  - These files are hidden by default. Open your main user directory and press Command + Shift + . (period) to show hidden files.
+  - You will have either .zshrc or .bash\_profile in that folder. Right click it and use the “Open With” option to open this file with the application “Text Edit”
+  - If this file is blank, you need to add four lines of environment variables (copied and pasted below) and then save the file
 
 ​​export NVM\_DIR="$HOME/.nvm"
 
@@ -144,44 +144,37 @@ There are a few points along the way where users less familiar with the command 
 
 \[ -s "$NVM\_DIR/bash\_completion" \] && . "$NVM\_DIR/bash\_completion"  # This loads nvm bash\_completion
 
-*   Finally, type “exit” in your terminal window, quit out of the terminal, and then reopen your terminal window.
+  - Finally, type “exit” in your terminal window, quit out of the terminal, and then reopen your terminal window.
 
-Configuring Digital Ocean servers with Net.Create dependencies
+# Configuring Digital Ocean servers with Net.Create dependencies
 --------------------------------------------------------------
 
 1.  In Digital Ocean: Create -> Droplet (for full instructions see [https://docs.digitalocean.com/products/droplets/how-to/create/](https://www.google.com/url?q=https://docs.digitalocean.com/products/droplets/how-to/create/&sa=D&source=editors&ust=1643819696085980&usg=AOvVaw04vE3vdefbVxqVxOLIuybQ) ) ![](images/image4.png) 
 2.  Select the following settings:
 
-1.  Ubuntu for the distribution
-2.  Basic for the plan
-3.  Regular Intel for the CPU option
-4.  The $5 per month plan (unless you expect an enormous amount of traffic)
-5.  The default data center with no added storage
+  1.  Ubuntu for the distribution
+  2.  Basic for the plan
+  3.  Regular Intel for the CPU option
+  4.  The $5 per month plan (unless you expect an enormous amount of traffic)
+  5.  The default data center with no added storage
 
 3.  For security and access, the “password” option is easier to manage but if you are comfortable with SSH logins, it won’t affect your Net.Create install. You can leave the other information like host name unchanged if you are less familiar with server setups; if you are familiar with server setups, changes here won’t significantly affect your Net.Create install.
 4.  Wait for the new droplet to be setup.
-
-1.  It will appear under the project where it was created, or via the droplet menu on the left.
-2.  The blue bar shows how far along it is in setting up. This should only take a few minutes). ![](images/image3.png) 
-
+    1.  It will appear under the project where it was created, or via the droplet menu on the left.
+    2.  The blue bar shows how far along it is in setting up. This should only take a few minutes). ![](images/image3.png) 
 5.  Click on the droplet name either in the project or list of droplets
 6.  Click on Access on the left
-
-1.   ![](images/image1.png) 
-
+    1.   ![](images/image1.png) 
 7.  Click on launch droplet console to access the console
 8.  You can now create a folder for your projects
-
-1.  Enter mkdir dev
-2.  Enter cd dev  to move into that folder
-
+    1.  Enter mkdir dev
+    2.  Enter cd dev  to move into that folder
 9.  Setup Node Version Manager (NVM)
-
-1.  Enter sudo apt install curl
-2.  Enter  Curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-3.  Close the console, reopen it, and reopen the dev folder ( cd dev  t
-4.  Enter nvm all setup
-5.  Enter nvm use 10.22 . NOTE: this is older, but it’s the one Net.Create was written with
+    1.  Enter sudo apt install curl
+    2.  Enter  Curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+    3.  Close the console, reopen it, and reopen the dev folder ( cd dev  t
+    4.  Enter nvm all setup
+    5.  Enter nvm use 10.22 . NOTE: this is older, but it’s the one Net.Create was written with
 
 Installing Net.Create
 =====================
