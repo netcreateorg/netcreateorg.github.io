@@ -1,11 +1,9 @@
 ---
 layout: page-fullwidth
-title: "Theme Documentation"
-subheadline: "How to use Feeling Responsive"
-teaser: "The documentation is a work in progress..."
+title: "Net.Create Documentation"
+subheadline: "Getting Started with Net.Create"
+teaser: "This documentation is a work in progress."
 permalink: "/documentation/"
-header:
-   image_fullwidth: "header_roadmap_2.jpg"
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
