@@ -6,13 +6,11 @@ teaser: "This documentation is a work in progress."
 permalink: "/documentation/"
 ---
 
-Getting Started (for folks new to technology)
-=============================================
+# Getting Started (for folks new to technology)
 
 The first part of this guide will help you install Net.Create and keep it up to date. The second part of the guide documents the files, file formats, and file locations you’ll need to know to run Net.Create on a regular basis.
 
-The “Command line” or “Command prompt”
---------------------------------------
+## The “Command line” or “Command prompt”
 
 When you select or open a folder with your mouse, rename or open a file with a specific piece of software, or change a setting in a piece of software, you’re telling your computer how you want to interact with it. When we use Macs or PCs, we’re using a GUI environment–a graphical user interface that gives us folders and files to click on by using a mouse.
 
@@ -20,45 +18,39 @@ Each mouse click executes a command: “open a folder”, “list the files in t
 
 ### Home Directories
 
-One of the most important concepts for users new to the command line is the “home directory”. When you log in to your computer, you’re telling it who you are and where the folder that stores all of your files is located: /Users/ yourusername /  .
+One of the most important concepts for users new to the command line is the “home directory”. When you log in to your computer, you’re telling it who you are and where the folder that stores all of your files is located: `/Users/yourusername/` .
 
 ### How to Read Paths
 
-A “path” is a fancy way to say that there are folders inside of other folders on your computer, and to find a file, you need to open the right folders in order. Your home directory is expressed as a path: /Users/ yourusername / .
+A “path” is a fancy way to say that there are folders inside of other folders on your computer, and to find a file, you need to open the right folders in order. Your home directory is expressed as a path: `/Users/yourusername/`.
 
-/
+|	Path element	|	What it means 													|
+|	`/`				|   Open the main hard drive on this computer						|
+|	`Users`			| 	Inside the main hard drive is a folder called “Users”			|
+|	`/`				|   We’re going to look for a file or folder inside “Users” now.	|
+|	`yourusername/`	| 	Inside the “Users” folder is a folder labeled with your user name. We know it’s a folder because of the trailing slash, or the slash at the end of the command.			|
 
-Open the main hard drive on this computer
+So, if you had stored a Microsoft Word document called `MyWordFile.docx` in the `Documents` folder of your main user directory, its path (or storage location) would be: `/Users/yourusername/Documents/MyWordFile.docx` .
 
-Users
+Your user directory has a nickname: `~/`
 
-Inside the main hard drive is a folder called “Users”
-
-/
-
-We’re going to look for a file or folder inside “Users” now.
-
-yourusername/
-
-Inside the “Users” folder is a folder labeled with your user name. We know it’s a folder because of the trailing slash, or the slash at the end of the command.
-
-So, if you had stored a Microsoft Word document called MyWordFile.docx in the Documents folder of your main user directory, its path, or storage location, would be: /Users/ yourusername /Documents/MyWordFile.docx .
-
-Your user directory has a nickname: ~/
-
-So /users/ yourusername / and ~/ are references to the same path.
+So `/users/yourusername/` and `~/` are references to the same path.
 
 ### Opening directories
 
-Instead of double-clicking to open a directory, we “cd” or “change directory” by typing the following line and then pressing “return”:
+Instead of double-clicking to open a directory, we `cd` or “change directory” by typing the following line and then pressing “return”:
 
+```
 cd /Users/yourusername/Documents
+```
 
+```
 cd ~/Documents
+```
 
-When you type either one of these into the command prompt and hit return, you’ll invisibly “move” out of the directory you’re in, and into the Documents directory in your main user folder. You now have more ready access to work with the files in the directory you specified.
+When you type either one of these into the command prompt and hit return, you’ll “move” out of the directory you’re in, and into the Documents directory in your main user folder. The commands you run now will affect the directory you "moved" into.
 
-If you get lost, you can use the “pwd” or “print working directory” command to see which directory you’re currently in.
+If you get lost and can't tell which directory you're in, you can use the `pwd` or “print working directory” command to see which directory you’re currently in.
 
 ### Running commands
 
