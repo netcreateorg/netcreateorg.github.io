@@ -6,6 +6,7 @@ teaser: "This documentation is a work in progress."
 permalink: "/documentation/"
 ---
 
+* TOC
 {:toc}
 
 # Getting Started (for folks new to technology)
