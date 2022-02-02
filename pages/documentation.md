@@ -60,17 +60,17 @@ If you get lost and can't tell which directory you're in, you can use the `pwd` 
 
 When you double-click on a file, you’re explicitly asking your computer to open that file, but you’re implicitly choosing an application that can open the file too. On the command line, you have to specify an application or a command. There are two general actions we might want to take: seeing what’s in our current directory or manipulating files in our current directory with another program.
 
-The change-directory command is one of those “look and see” commands. So is “ls” or “list” which prints out a list of the files that are in your working or current directory.
+The change-directory command is one of those “look and see” commands. So is `“ls”` or `“list”` which prints out a list of the files that are in your working or current directory.
 
 If we want to open and manipulate a file, we need to specify the program. That usually requires us to type two different things: an application name and then the file we want to work with, separated by a space.
 
-Word /Users/yourusername/Documents/MyWordFile.docx
+`Word /Users/yourusername/Documents/MyWordFile.docx`
 
 Or
 
-Word ./MyWordFile.docx
+`Word ./MyWordFile.docx`
 
-The first lets us open MyWordFile.docx no matter which directory we currently have open. The second says “./” or “I am in a directory that I know contains a file called MyWordFile.docx so please don’t make me type the whole thing!”.
+The first lets us open `MyWordFile.docx` no matter which directory we currently have open. The second says `“./”` or “I am in a directory that I know contains a file called `MyWordFile.docx` so please don’t make me type the whole thing!”.
 
 ## Software “Environments” and “Dependencies”
 
@@ -109,8 +109,8 @@ If you are running Net.Create on an Apple with an M1 chip (or you’re not sure)
 There are a few points along the way where users less familiar with the command line might run into trouble. Read these first so you can work out which steps you’ll need to modify and how you’ll need to modify them:
 
 - Step 4 varies based on your MacOS version
-  - If you are running MacOS earlier than Catalina, use: touch .bash\_profile
-  - If you are running Catalina or later, use: touch .zshrc
+  - If you are running MacOS earlier than Catalina, use: touch `.bash\_profile`
+  - If you are running Catalina or later, use: `touch .zshrc`
 -  Step 6 has two variations.
   - First check the NVM install page to make sure you are using the most recent version.
   - Then, look for what programmers call a pipe, the vertical line after “install.sh” that looks like this: | . Pipes separate the main part of a command in the command line from an extension of that command that might have some variances from system to system. Adjust what comes after it based on your MacOS.
@@ -202,7 +202,7 @@ The `\runtime\` folder that holds your network templates, data, and network-acce
 Note that on MacOS, the Net.Create server will stop when you put your Mac to sleep (or close the laptop lid) but restart when the Mac wakes up.
 
 - Decide whether you are opening an existing network or creating a new network.
-  - If you are opening an existing network, confirm that the network has both a “.loki” and “.template” file. Use the name of the network before the period “.” as the dataset you are opening.
+  - If you are opening an existing network, confirm that the network has both a `.loki` and `.template` file. Use the name of the network before the period `.` as the dataset you are opening.
   - If you are creating a new network, choose a network name with no spaces in it that does not already exist.
 - Note the name of the network you will open/create. For these examples, we will use “MyNetwork” as the network name.
   - In the terminal, `cd` to `netcreate-2018/dev/build`
@@ -219,6 +219,6 @@ Starting and stopping the server on Digital Ocean is identical to MacOS, *except
 
 You may need to stop Net.Create because you want to control who’s editing it, or because you have a new template to load, or because you’re switching databases.
 
-Either way, the process is simple. Go to your terminal, which should have the Net.Create logging lines printing out. Press CTRL-C to interrupt the Net.Create process and get your command line back.
+Either way, the process is simple. Go to your terminal, which should have the Net.Create logging lines printing out. Press `CTRL-C` to interrupt the Net.Create process and get your command line back.
 
-To get the previous command you typed into the terminal (the one that starts the Net.Create network you just stopped), press the “up” arrow on your keyboard.
+To get the previous command you typed into the terminal (the one that starts the Net.Create network you just stopped), press the `up` arrow on your keyboard.
