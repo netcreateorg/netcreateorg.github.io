@@ -6,13 +6,13 @@ teaser: "This documentation is a work in progress."
 permalink: "/documentation/"
 ---
 
+{:toc}
+
 # Getting Started (for folks new to technology)
 
 The first part of this guide will help you install Net.Create and keep it up to date. The second part of the guide documents the files, file formats, and file locations you’ll need to know to run Net.Create on a regular basis.
 
 If you prefer to follow along with video, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a Net.Create playlist at YouTube: [https://youtu.be/DymqL-88CBQ](https://youtu.be/DymqL-88CBQ)
-
-{:toc}
 
 ## The “Command line” or “Command prompt”
 
@@ -113,11 +113,11 @@ There are a few points along the way where users less familiar with the command 
   - If you are running Catalina or later, use: `touch .zshrc`
 -  Step 6 has two variations.
   - First check the NVM install page to make sure you are using the most recent version.
-  - Then, look for what programmers call a pipe, the vertical line after “install.sh” that looks like this: | . Pipes separate the main part of a command in the command line from an extension of that command that might have some variances from system to system. Adjust what comes after it based on your MacOS.
-  - Earlier than Catalina:
-    - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash`
-  - Catalina or later:
-    - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh`
+  - Then, look for what programmers call a pipe, the vertical line after “install.sh” that looks like this: `|` . Pipes separate the main part of a command in the command line from an extension of that command that might have some variances from system to system. Adjust what comes after it based on your MacOS.
+    - Earlier than Catalina:
+      - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash`
+    - Catalina or later:
+      - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh`
   - Remember that spaces also act as separators in the command line. You’ll need a space before and after the pipe.
 - If step 8 fails, you may need to check your /User/yourname/ folder for a file called `.zshrc` or `.bash\_profile`.
   - These files are hidden by default. Open your main user directory and press `Command` + `Shift` + `.` (period) to show hidden files.
