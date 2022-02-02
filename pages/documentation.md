@@ -128,28 +128,27 @@ export NVM_DIR="$HOME/.nvm"
 
 ## Configuring Digital Ocean servers with Net.Create dependencies
 
-1.  In Digital Ocean: Create -> Droplet (for full instructions see [https://docs.digitalocean.com/products/droplets/how-to/create/](https://www.google.com/url?q=https://docs.digitalocean.com/products/droplets/how-to/create/&sa=D&source=editors&ust=1643819696085980&usg=AOvVaw04vE3vdefbVxqVxOLIuybQ) ) ![](images/image4.png) 
+1.  In Digital Ocean: Create -> Droplet . For full instructions see [https://docs.digitalocean.com/products/droplets/how-to/create/](https://www.google.com/url?q=https://docs.digitalocean.com/products/droplets/how-to/create/&sa=D&source=editors&ust=1643819696085980&usg=AOvVaw04vE3vdefbVxqVxOLIuybQ)
 2.  Select the following settings:
-  1.  Ubuntu for the distribution
-  2.  Basic for the plan
-  3.  Regular Intel for the CPU option
-  4.  The $5 per month plan (unless you expect an enormous amount of traffic)
-  5.  The default data center with no added storage
+    1. Ubuntu for the distribution
+    2.  Basic for the plan
+    3.  Regular Intel for the CPU option
+    4.  The $5 per month plan (unless you expect an enormous amount of traffic)
+    5.  The default data center with no added storage
 3.  For security and access, the “password” option is easier to manage but if you are comfortable with SSH logins, it won’t affect your Net.Create install. You can leave the other information like host name unchanged if you are less familiar with server setups; if you are familiar with server setups, changes here won’t significantly affect your Net.Create install.
 4.  Wait for the new droplet to be setup.
     1.  It will appear under the project where it was created, or via the droplet menu on the left.
-    2.  The blue bar shows how far along it is in setting up. This should only take a few minutes). ![](images/image3.png) 
+    2.  The blue bar shows how far along it is in setting up. This should only take a few minutes).
 5.  Click on the droplet name either in the project or list of droplets
 6.  Click on Access on the left
-    1.   ![](images/image1.png) 
 7.  Click on launch droplet console to access the console
 8.  You can now create a folder for your projects
-    1.  Enter mkdir dev
-    2.  Enter cd dev  to move into that folder
+    1.  Enter `mkdir dev`
+    2.  Enter `cd dev` to change directories into the newly created "dev" directory
 9.  Setup Node Version Manager (NVM)
-    1.  Enter sudo apt install curl
-    2.  Enter  Curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-    3.  Close the console, reopen it, and reopen the dev folder ( cd dev  t
+    1.  Enter `sudo apt install curl`
+    2.  Enter `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
+    3.  Close the console, reopen it, and reopen the dev folder ( `cd dev` )
     4.  Enter nvm all setup
     5.  Enter nvm use 10.22 . NOTE: this is older, but it’s the one Net.Create was written with
 
@@ -157,13 +156,20 @@ export NVM_DIR="$HOME/.nvm"
 
 Net.Create uses GitHub to let several software developers work on its code all at once without overwriting each other.
 
-GitHub also lets you download and install a copy of the Net.Create software: [https://github.com/netcreateorg/netcreate-2018/wiki/Installation-Guide#download-and-run-the-source-code](https://www.google.com/url?q=https://github.com/netcreateorg/netcreate-2018/wiki/Installation-Guide%23download-and-run-the-source-code&sa=D&source=editors&ust=1643819696089841&usg=AOvVaw1eFtBeGkAo8p30y8iBfQZ9)
+GitHub also gives users the ability to make a local copy of the Net.Create software.
 
-- open Terminal
+** A full installation guide is available at [https://github.com/netcreateorg/netcreate-2018/wiki/Installation-Guide#download-and-run-the-source-code](https://github.com/netcreateorg/netcreate-2018/wiki/Installation-Guide#download-and-run-the-source-code).**
+
+## If you are a first-time command-line user using MacOS
+
+These directions explain in more detail each step in the "download and run the source code" section of the [full installation guide](https://github.com/netcreateorg/netcreate-2018/wiki/Installation-Guide#download-and-run-the-source-code)
+
+- Open Terminal on your Mac.
 - `cd` to the project's build directory: `dev/netcreate-2018/build/`
-- Then use the command “git” and its setting “clone” to copy the contents of the Net.Create software package from github.com to your local computer:
-  - `git clone [https://github.com/netcreateorg/netcreate-2018.git`
-- The next step is to tell your computer which version of Net.Create you want to use: git checkout dev tells your computer that you want to use the command “git” to “checkout” or use the “dev” version of Net.Create, which is the most stable recent version of Net.Create
+- Use the command “git” and its setting “clone” to copy the contents of the Net.Create software package from github.com to your local computer:
+  - `git clone https://github.com/netcreateorg/netcreate-2018.git`
+- The next step is to tell your computer which version of Net.Create you want to use. You want to use the command “git” to “checkout” or use the “dev” version of Net.Create, which is the most stable recent version of Net.Create
+  - `git checkout dev`
 - We need to open the directory that has the dev build of Net.Create in it
   - `cd netcreate-2018/build`
 - And then we need to use node package manager “npm” to compile “ci”, or put together, a version of Net.Create that’s customized for the computer we’re currently using.
@@ -172,7 +178,6 @@ GitHub also lets you download and install a copy of the Net.Create software: [ht
 # Administering Net.Create
 
 ## Starting and Stopping Net.Create
-
 
 Running Net.Create has two components:
 
