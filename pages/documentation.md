@@ -68,15 +68,13 @@ Word ./MyWordFile.docx
 
 The first lets us open MyWordFile.docx no matter which directory we currently have open. The second says “./” or “I am in a directory that I know contains a file called MyWordFile.docx so please don’t make me type the whole thing!”.
 
-Software “Environments” and “Dependencies”
-------------------------------------------
+## Software “Environments” and “Dependencies”
 
 Software developers use the word “environment” to handwave at a whole bunch of interlocking things: operating system, the software that’s been installed, where certain required software packages (“dependencies”) are installed, and where you keep your data. These environment variables are sometimes invisible. For instance, most software just gets installed in the Applications folder.
 
 For software packages like Net.Create, you’ll need to explicitly control those environment variables by using the command line to control your computer (instead of point-and-click interactions). The instructions here use the command line to install software in specific places, adding configuration information to hidden system files.
 
 # The Net.Create environment and its dependencies
-===============================================
 
 Net.Create requires several software packages to run. That is, it has the following dependencies:
 
@@ -86,12 +84,10 @@ Net.Create requires several software packages to run. That is, it has the follow
 -   XCode  provides the programming infrastructure that helps MacOS run these libraries and javascript packages.
 
 # Choosing Your Net.Create Install Platform
-=========================================
 
 Net.Create can run on either MacOS or Digital Ocean. Follow one of those two paths in this section before you move on to the “Installing Net.Create” section.
 
 ## Installing Net.Create dependencies on MacOS
--------------------------------------------
 
 Net.Create isn’t double-clickable, either when you run it or when you install it. Instead, it uses a set of commands typed in at the command line. Installing Net.Create requires a number of these commands in sequence. Running it only requires 1.
 
@@ -139,7 +135,6 @@ There are a few points along the way where users less familiar with the command 
   - Finally, type “exit” in your terminal window, quit out of the terminal, and then reopen your terminal window.
 
 # Configuring Digital Ocean servers with Net.Create dependencies
---------------------------------------------------------------
 
 1.  In Digital Ocean: Create -> Droplet (for full instructions see [https://docs.digitalocean.com/products/droplets/how-to/create/](https://www.google.com/url?q=https://docs.digitalocean.com/products/droplets/how-to/create/&sa=D&source=editors&ust=1643819696085980&usg=AOvVaw04vE3vdefbVxqVxOLIuybQ) ) ![](images/image4.png) 
 2.  Select the following settings:
@@ -168,8 +163,7 @@ There are a few points along the way where users less familiar with the command 
     4.  Enter nvm all setup
     5.  Enter nvm use 10.22 . NOTE: this is older, but it’s the one Net.Create was written with
 
-Installing Net.Create
-=====================
+# Installing Net.Create
 
 Net.Create uses GitHub to let several software developers work on its code all at once without overwriting each other.
 
@@ -190,11 +184,10 @@ GitHub also lets you download and install a copy of the Net.Create software: [ht
 
 *   npm ci
 
-Administering Net.Create
-========================
+# Administering Net.Create
 
-Starting and Stopping Net.Create
---------------------------------
+## Starting and Stopping Net.Create
+
 
 Running Net.Create has two components:
 
@@ -234,8 +227,7 @@ Note that on MacOS, the Net.Create server will stop when you put your Mac to sle
 
 *   Decide whether you are opening an existing network or creating a new network.
 
-Stopping Net.Create
--------------------
+## Stopping Net.Create
 
 You may need to stop Net.Create because you want to control who’s editing it, or because you have a new template to load, or because you’re switching databases.
 
