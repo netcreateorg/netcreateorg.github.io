@@ -10,6 +10,10 @@ permalink: "/documentation/"
 
 The first part of this guide will help you install Net.Create and keep it up to date. The second part of the guide documents the files, file formats, and file locations you’ll need to know to run Net.Create on a regular basis.
 
+If you prefer to follow along with video, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a Net.Create playlist at YouTube: [https://youtu.be/DymqL-88CBQ](https://youtu.be/DymqL-88CBQ)
+
+{:toc}
+
 ## The “Command line” or “Command prompt”
 
 When you select or open a folder with your mouse, rename or open a file with a specific piece of software, or change a setting in a piece of software, you’re telling your computer how you want to interact with it. When we use Macs or PCs, we’re using a GUI environment–a graphical user interface that gives us folders and files to click on by using a mouse.
