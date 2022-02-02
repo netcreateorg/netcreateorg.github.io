@@ -24,11 +24,11 @@ One of the most important concepts for users new to the command line is the “h
 
 A “path” is a fancy way to say that there are folders inside of other folders on your computer, and to find a file, you need to open the right folders in order. Your home directory is expressed as a path: `/Users/yourusername/`.
 
-|	Path element	|	What it means 													|
-|	`/`				|   Open the main hard drive on this computer						|
-|	`Users`			| 	Inside the main hard drive is a folder called “Users”			|
-|	`/`				|   We’re going to look for a file or folder inside “Users” now.	|
-|	`yourusername/`	| 	Inside the “Users” folder is a folder labeled with your user name. We know it’s a folder because of the trailing slash, or the slash at the end of the command.			|
+| Path element    |	What it means |
+| `/`             |   Open the main hard drive on this computer |
+| `Users`         | 	Inside the main hard drive is a folder called “Users” |
+| `/`             |   We’re going to look for a file or folder inside “Users” now. |
+| `yourusername/` | 	Inside the “Users” folder is a folder labeled with your user name. We know it’s a folder because of the trailing slash, or the slash at the end of the command. |
 
 So, if you had stored a Microsoft Word document called `MyWordFile.docx` in the `Documents` folder of your main user directory, its path (or storage location) would be: `/Users/yourusername/Documents/MyWordFile.docx` .
 
@@ -78,10 +78,10 @@ For software packages like Net.Create, you’ll need to explicitly control those
 
 Net.Create requires several software packages to run. That is, it has the following dependencies:
 
--   MacOS or Digital Ocean  (a Linux-based operating system). We suggest Digital Ocean for folks who want to access Net.Create from many different places. Net.Create does not run on Windows machines (yet).
--   NodeJS  is a set of Javascript libraries that build the network nodes and edges, let users drag the graph around and hide/display the Node/Edge tables.
--   Node Package Manager (npm) and Brunch  help keep those libraries up to date
--   XCode  provides the programming infrastructure that helps MacOS run these libraries and javascript packages.
+- MacOS or Digital Ocean  (a Linux-based operating system). We suggest Digital Ocean for folks who want to access Net.Create from many different places. Net.Create does not run on Windows machines (yet).
+- NodeJS  is a set of Javascript libraries that build the network nodes and edges, let users drag the graph around and hide/display the Node/Edge tables.
+- Node Package Manager (npm) and Brunch  help keep those libraries up to date
+- XCode  provides the programming infrastructure that helps MacOS run these libraries and javascript packages.
 
 # Choosing Your Net.Create Install Platform
 
@@ -97,8 +97,8 @@ The Net.Create Wiki has a full set of environment, dependency and code installat
 
 If you are running Net.Create on an Apple with an M1 chip (or you’re not sure):
 
-*   Go to your apple menu and choose “About This Mac”
-*   Look at the line that starts with “Chip”. If this line reads “Chip Apple M1”, you need to enter an additional command in your terminal: arch -x86\_64 zsh
+- Go to your apple menu and choose “About This Mac”
+- Look at the line that starts with “Chip”. If this line reads “Chip Apple M1”, you need to enter an additional command in your terminal: `arch -x86\_64 zsh`
 
 ### For folks new to command-line installs
 
@@ -111,40 +111,30 @@ There are a few points along the way where users less familiar with the command 
   - First check the NVM install page to make sure you are using the most recent version.
   - Then, look for what programmers call a pipe, the vertical line after “install.sh” that looks like this: | . Pipes separate the main part of a command in the command line from an extension of that command that might have some variances from system to system. Adjust what comes after it based on your MacOS.
   - Earlier than Catalina:
-
-  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-
+    - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash`
   - Catalina or later:
-
-  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh
-
+    - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh`
   - Remember that spaces also act as separators in the command line. You’ll need a space before and after the pipe.
-
-- If step 8 fails, you may need to check your /User/yourname/ folder for a file called .zshrc or .bash\_profile .
-
-  - These files are hidden by default. Open your main user directory and press Command + Shift + . (period) to show hidden files.
-  - You will have either .zshrc or .bash\_profile in that folder. Right click it and use the “Open With” option to open this file with the application “Text Edit”
+- If step 8 fails, you may need to check your /User/yourname/ folder for a file called `.zshrc` or `.bash\_profile`.
+  - These files are hidden by default. Open your main user directory and press `Command` + `Shift` + `.` (period) to show hidden files.
+  - You will have either `.zshrc` or `.bash\_profile` in that folder. Right-click it and use the “Open With” option to open this file with the application “Text Edit”
   - If this file is blank, you need to add four lines of environment variables (copied and pasted below) and then save the file
-
-​​export NVM\_DIR="$HOME/.nvm"
-
-\[ -s "$NVM\_DIR/nvm.sh" \] && . "$NVM\_DIR/nvm.sh"  # This loads nvm
-
-\[ -s "$NVM\_DIR/bash\_completion" \] && . "$NVM\_DIR/bash\_completion"  # This loads nvm bash\_completion
-
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
   - Finally, type “exit” in your terminal window, quit out of the terminal, and then reopen your terminal window.
 
 # Configuring Digital Ocean servers with Net.Create dependencies
 
 1.  In Digital Ocean: Create -> Droplet (for full instructions see [https://docs.digitalocean.com/products/droplets/how-to/create/](https://www.google.com/url?q=https://docs.digitalocean.com/products/droplets/how-to/create/&sa=D&source=editors&ust=1643819696085980&usg=AOvVaw04vE3vdefbVxqVxOLIuybQ) ) ![](images/image4.png) 
 2.  Select the following settings:
-
   1.  Ubuntu for the distribution
   2.  Basic for the plan
   3.  Regular Intel for the CPU option
   4.  The $5 per month plan (unless you expect an enormous amount of traffic)
   5.  The default data center with no added storage
-
 3.  For security and access, the “password” option is easier to manage but if you are comfortable with SSH logins, it won’t affect your Net.Create install. You can leave the other information like host name unchanged if you are less familiar with server setups; if you are familiar with server setups, changes here won’t significantly affect your Net.Create install.
 4.  Wait for the new droplet to be setup.
     1.  It will appear under the project where it was created, or via the droplet menu on the left.
@@ -169,20 +159,15 @@ Net.Create uses GitHub to let several software developers work on its code all a
 
 GitHub also lets you download and install a copy of the Net.Create software: [https://github.com/netcreateorg/netcreate-2018/wiki/Installation-Guide#download-and-run-the-source-code](https://www.google.com/url?q=https://github.com/netcreateorg/netcreate-2018/wiki/Installation-Guide%23download-and-run-the-source-code&sa=D&source=editors&ust=1643819696089841&usg=AOvVaw1eFtBeGkAo8p30y8iBfQZ9)
 
-*   open Terminal
-*   cd to the project's build directory: dev/netcreate-2018/build/
-*   Then use the command “git” and its setting “clone” to copy the contents of the Net.Create software package from github.com to your local computer:
-
-*   git clone [https://github.com/netcreateorg/netcreate-2018.git](https://www.google.com/url?q=https://github.com/netcreateorg/netcreate-2018.git&sa=D&source=editors&ust=1643819696090543&usg=AOvVaw06dRbejpYsN4ys4z_xM2mC)
-
-*   The next step is to tell your computer which version of Net.Create you want to use: git checkout dev tells your computer that you want to use the command “git” to “checkout” or use the “dev” version of Net.Create, which is the most stable recent version of Net.Create
-*   We need to open the directory that has the dev build of Net.Create in it
-
-*   cd netcreate-2018/build
-
-*   And then we need to use node package manager “npm” to compile “ci”, or put together, a version of Net.Create that’s customized for the computer we’re currently using.
-
-*   npm ci
+- open Terminal
+- `cd` to the project's build directory: `dev/netcreate-2018/build/`
+- Then use the command “git” and its setting “clone” to copy the contents of the Net.Create software package from github.com to your local computer:
+  - `git clone [https://github.com/netcreateorg/netcreate-2018.git`
+- The next step is to tell your computer which version of Net.Create you want to use: git checkout dev tells your computer that you want to use the command “git” to “checkout” or use the “dev” version of Net.Create, which is the most stable recent version of Net.Create
+- We need to open the directory that has the dev build of Net.Create in it
+  - `cd netcreate-2018/build`
+- And then we need to use node package manager “npm” to compile “ci”, or put together, a version of Net.Create that’s customized for the computer we’re currently using.
+  - `npm ci`
 
 # Administering Net.Create
 
@@ -196,36 +181,30 @@ Running Net.Create has two components:
 
 ### Before you start the server for the first time
 
-The \`runtime\` folder that holds your network templates, data, and network-access logs is not created automatically during the Net.Create installation process.
+The `\runtime\` folder that holds your network templates, data, and network-access logs is not created automatically during the Net.Create installation process.
 
-*   On a Mac you can navigate to the build folder in your netcreate-2018 folder and make a folder called runtime.
-*   On Digital Ocean
-
-*   Cd to the netcreate-2018/build/ folder
-*   Enter mkdir runtime
+- On a Mac you can navigate to the build folder in your netcreate-2018 folder and make a folder called runtime.
+- On Digital Ocean
+  - `cd` to the `netcreate-2018/build/` folder
+  - Enter `mkdir runtime`
 
 ### Starting the server on a Mac
 
 Note that on MacOS, the Net.Create server will stop when you put your Mac to sleep (or close the laptop lid) but restart when the Mac wakes up.
 
-*   Decide whether you are opening an existing network or creating a new network.
-
-*   If you are opening an existing network, confirm that the network has both a “.loki” and “.template” file. Use the name of the network before the period “.” as the dataset you are opening.
-*   If you are creating a new network, choose a network name with no spaces in it that does not already exist.
-
-*   Note the name of the network you will oepn/create. For these examples, we will use “MyNetwork” as the network name.
-*   In the terminal, go to netcreate-2018/dev/build
-*   Enter ./nc.js --dataset=MyNetwork
-*   Watch for the MAIN APP and CLIENT APP lines
-
-*   MAIN APP will usually be [http://localhost:3000](https://www.google.com/url?q=http://localhost:3000&sa=D&source=editors&ust=1643819696096628&usg=AOvVaw2hekkSPXHOfQ2RBtYVb27D)
-*   CLIENT APP will vary based on your current IP address (the address you have been assigned on your network, which will be a string of numberS)
+- Decide whether you are opening an existing network or creating a new network.
+  - If you are opening an existing network, confirm that the network has both a “.loki” and “.template” file. Use the name of the network before the period “.” as the dataset you are opening.
+  - If you are creating a new network, choose a network name with no spaces in it that does not already exist.
+- Note the name of the network you will open/create. For these examples, we will use “MyNetwork” as the network name.
+  - In the terminal, `cd` to `netcreate-2018/dev/build`
+  - Enter `./nc.js --dataset=MyNetwork`
+  - Watch for the `MAIN APP` and `CLIENT APP` lines
+    - MAIN APP will usually be http://localhost:3000
+    - CLIENT APP will vary based on your current IP address (the address you have been assigned on your network, which will be a string of numberS)
 
 ### Starting the server on Digital Ocean
 
- On Digital Ocean, closing the terminal will stop the Net.Create server.
-
-*   Decide whether you are opening an existing network or creating a new network.
+Starting and stopping the server on Digital Ocean is identical to MacOS, *except that on Digital Ocean, closing the terminal will stop the Net.Create server automatically*. Digital Ocean users will need a pm2 command (provided in separate documentation) to keep their server running after closing the Digital Ocean console
 
 ## Stopping Net.Create
 
@@ -234,5 +213,3 @@ You may need to stop Net.Create because you want to control who’s editing it, 
 Either way, the process is simple. Go to your terminal, which should have the Net.Create logging lines printing out. Press CTRL-C to interrupt the Net.Create process and get your command line back.
 
 To get the previous command you typed into the terminal (the one that starts the Net.Create network you just stopped), press the “up” arrow on your keyboard.
-
-Using Net.Create is fairly easy and documentation on how to add nodes and edges is in video form at XXXX. To give users access to Net.Create, to delete nodes, and to set up node/edge types and notes fields that suit your project, you need a few additional instructions.
