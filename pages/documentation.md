@@ -9,11 +9,11 @@ permalink: "/documentation/"
 * TOC
 {:toc}
 
-# Getting Started (for folks new to technology)
+# Getting Started (for folks new to technology)https://idah.indiana.edu/news-events/index.html
 
 The first part of this guide will help you install Net.Create and keep it up to date. The second part of the guide documents the files, file formats, and file locations you’ll need to know to run Net.Create on a regular basis.
 
-If you prefer to follow along with video, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a Net.Create playlist at YouTube: [https://youtu.be/DymqL-88CBQ](https://youtu.be/DymqL-88CBQ)
+If you prefer to follow along with video, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a [Net.Create playlist at YouTube](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.youtube.com%2Fplaylist%3Flist%3DPLM39ibhMucXVuhFHzm56OQHQve-35bFTt&data=04%7C01%7Ccraigkl%40indiana.edu%7C87dfd2ab21f545f68f1308d9e8236d51%7C1113be34aed14d00ab4bcdd02510be91%7C0%7C0%7C637796061115067289%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=%2FHAMFqNAmHfcnIMX3tHWl1P1glPzZpCK6ix0pP%2F9nEQ%3D&reserved=0)
 
 ## The “Command line” or “Command prompt”
 
