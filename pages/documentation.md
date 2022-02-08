@@ -9,11 +9,11 @@ permalink: "/documentation/"
 * TOC
 {:toc}
 
-# Getting Started (for folks new to technology)https://idah.indiana.edu/news-events/index.html
+# Getting Started (for folks new to technology)
 
 The first part of this guide will help you install Net.Create and keep it up to date. The second part of the guide documents the files, file formats, and file locations you’ll need to know to run Net.Create on a regular basis.
 
-If you prefer to follow along with video, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a [Net.Create playlist at YouTube](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.youtube.com%2Fplaylist%3Flist%3DPLM39ibhMucXVuhFHzm56OQHQve-35bFTt&data=04%7C01%7Ccraigkl%40indiana.edu%7C87dfd2ab21f545f68f1308d9e8236d51%7C1113be34aed14d00ab4bcdd02510be91%7C0%7C0%7C637796061115067289%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=%2FHAMFqNAmHfcnIMX3tHWl1P1glPzZpCK6ix0pP%2F9nEQ%3D&reserved=0)
+If you prefer to follow along with video, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a [Net.Create playlist at YouTube](https://www.youtube.com/playlist?list=PLM39ibhMucXVuhFHzm56OQHQve-35bFTt)
 
 ## The “Command line” or “Command prompt”
 
@@ -88,7 +88,7 @@ Net.Create requires several software packages to run. That is, it has the follow
 - Node Package Manager (npm) and Brunch  help keep those libraries up to date
 - XCode  provides the programming infrastructure that helps MacOS run these libraries and javascript packages.
 
-# Choosing Your Net.Create Install Platform
+# Choosing Your Net.Create Install Platform: MacOS or Digital Ocean
 
 Net.Create can run on either MacOS or Digital Ocean. Follow one of those two paths in this section before you move on to the “Installing Net.Create” section.
 
@@ -131,7 +131,7 @@ export NVM_DIR="$HOME/.nvm"
 ```
   - Finally, type “exit” in your terminal window, quit out of the terminal, and then reopen your terminal window.
 
-## Configuring Digital Ocean servers with Net.Create dependencies
+## Installing Net.Create Dependencies on Digital Ocean servers
 
 1.  In Digital Ocean: Create -> Droplet . For full instructions see [https://docs.digitalocean.com/products/droplets/how-to/create/](https://www.google.com/url?q=https://docs.digitalocean.com/products/droplets/how-to/create/&sa=D&source=editors&ust=1643819696085980&usg=AOvVaw04vE3vdefbVxqVxOLIuybQ)
 2.  Select the following settings:
