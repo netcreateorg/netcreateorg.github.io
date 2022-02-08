@@ -112,7 +112,7 @@ If you are running Net.Create on an Apple with an M1 chip (or you’re not sure)
 There are a few points along the way where users less familiar with the command line might run into trouble. Read these first so you can work out which steps you’ll need to modify and how you’ll need to modify them:
 
 - Step 4 varies based on your MacOS version
-  - If you are running MacOS earlier than Catalina, use: touch `.bash\_profile`
+  - If you are running MacOS earlier than Catalina, use: touch `.bash_profile`
   - If you are running Catalina or later, use: `touch .zshrc`
 -  Step 6 has two variations.
    - First check the NVM install page to make sure you are using the most recent version.
