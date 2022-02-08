@@ -6,14 +6,15 @@ teaser: "This documentation is a work in progress."
 permalink: "/documentation/"
 ---
 
+If you prefer to follow installation instructions in video form, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a [Net.Create playlist at YouTube](https://www.youtube.com/playlist?list=PLM39ibhMucXVuhFHzm56OQHQve-35bFTt) . *You can use the text instructions here to copy and paste the installation instructions as you follow along with the video.*
+
+
 * TOC
 {:toc}
 
 # Getting Started (for folks new to technology)
 
 The first part of this guide will help you install Net.Create and keep it up to date. The second part of the guide documents the files, file formats, and file locations you’ll need to know to run Net.Create on a regular basis.
-
-If you prefer to follow along with video, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a [Net.Create playlist at YouTube](https://www.youtube.com/playlist?list=PLM39ibhMucXVuhFHzm56OQHQve-35bFTt)
 
 ## The “Command line” or “Command prompt”
 
@@ -112,7 +113,7 @@ If you are running Net.Create on an Apple with an M1 chip (or you’re not sure)
 There are a few points along the way where users less familiar with the command line might run into trouble. Read these first so you can work out which steps you’ll need to modify and how you’ll need to modify them:
 
 - Step 4 varies based on your MacOS version
-  - If you are running MacOS earlier than Catalina, use: touch `.bash_profile`
+  - If you are running MacOS earlier than Catalina, use: touch `.`
   - If you are running Catalina or later, use: `touch .zshrc`
 -  Step 6 has two variations.
    - First check the NVM install page to make sure you are using the most recent version.
@@ -122,9 +123,9 @@ There are a few points along the way where users less familiar with the command 
        - Catalina or later:
          - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh`
      - Remember that spaces also act as separators in the command line. You’ll need a space before and after the pipe.
-- If step 8 fails, you may need to check your /User/yourname/ folder for a file called `.zshrc` or `.bash\_profile`.
+- If step 8 fails, you may need to check your /User/yourname/ folder for a file called `.zshrc` or `.`.
   - These files are hidden by default. Open your main user directory and press `Command` + `Shift` + `.` (period) to show hidden files.
-  - You will have either `.zshrc` or `.bash\_profile` in that folder. Right-click it and use the “Open With” option to open this file with the application “Text Edit”
+  - You will have either `.zshrc` or `.` in that folder. Right-click it and use the “Open With” option to open this file with the application “Text Edit”
   - If this file is blank, you need to add four lines of environment variables (copied and pasted below) and then save the file
 ```
 export NVM_DIR="$HOME/.nvm"
