@@ -113,7 +113,7 @@ If you are running Net.Create on an Apple with an M1 chip (or you’re not sure)
 There are a few points along the way where users less familiar with the command line might run into trouble. Read these first so you can work out which steps you’ll need to modify and how you’ll need to modify them:
 
 - Step 4 varies based on your MacOS version
-  - If you are running MacOS earlier than Catalina, use: touch `.`
+  - If you are running MacOS earlier than Catalina *or Digital Ocean*, use: `touch .bash_profile` and `touch .bashrc`
   - If you are running Catalina or later, use: `touch .zshrc`
 -  Step 6 has two variations.
    - First check the NVM install page to make sure you are using the most recent version.
@@ -123,9 +123,9 @@ There are a few points along the way where users less familiar with the command 
        - Catalina or later:
          - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh`
      - Remember that spaces also act as separators in the command line. You’ll need a space before and after the pipe.
-- If step 8 fails, you may need to check your /User/yourname/ folder for a file called `.zshrc` or `.`.
+- If step 8 fails, you may need to check your /User/yourname/ folder for a file called `.zshrc` or `.bash_profile`.
   - These files are hidden by default. Open your main user directory and press `Command` + `Shift` + `.` (period) to show hidden files.
-  - You will have either `.zshrc` or `.` in that folder. Right-click it and use the “Open With” option to open this file with the application “Text Edit”
+  - You will have either `.zshrc` or `.bash_profile` in that folder. Right-click it and use the “Open With” option to open this file with the application “Text Edit”
   - If this file is blank, you need to add four lines of environment variables (copied and pasted below) and then save the file
 ```
 export NVM_DIR="$HOME/.nvm"
@@ -152,15 +152,18 @@ You'll need to install Net.Create on a cloud server using Digital Ocean (~$5/mon
 5.  Click on the droplet name either in the project or list of droplets
 6.  Click on Access on the left
 7.  Click on launch droplet console to access the console
-8.  You can now create a folder for your projects
+8.  Create the "shell environment variables" that NodeJS needs to figure out where it needs to install things
+    1.  Enter `touch. bashrc`
+    2.  Enter `touch .bash_profile`
+9.  You can now create a folder for your projects
     1.  Enter `mkdir dev`
     2.  Enter `cd dev` to change directories into the newly created "dev" directory
-9.  Setup Node Version Manager (NVM)
+10.  Setup Node Version Manager (NVM)
     1.  Enter `sudo apt install curl`
     2.  Enter `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
     3.  Close the console, reopen it, and reopen the dev folder ( `cd dev` )
-    4.  Enter nvm all setup
-    5.  Enter nvm use 10.22 . NOTE: this is older, but it’s the one Net.Create was written with
+    4.  Enter `nvm all setup`
+    5.  Enter `nvm use 10.22` . NOTE: this is older, but it’s the one Net.Create was written with
 
 # Installing Net.Create
 
