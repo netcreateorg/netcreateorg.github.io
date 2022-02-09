@@ -159,12 +159,12 @@ You'll need to install Net.Create on a cloud server using Digital Ocean (~$5/mon
     1.  Enter `mkdir dev`
     2.  Enter `cd dev` to change directories into the newly created "dev" directory
 10.  Setup Node Version Manager (NVM)
-    1.  Enter `sudo apt install curl`
-    2.  Enter `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
-    3.  Close the console, reopen it, and reopen the dev folder ( `cd dev` )
-    4.  Enter `nvm all setup`
-    5.  Enter `nvm install 10.22`
-    6.  Enter `nvm use 10.22` . NOTE: this is older, but it’s the one Net.Create was written with.
+     1.  Enter `sudo apt install curl`
+     2.  Enter `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
+     3.  Close the console, reopen it, and reopen the dev folder ( `cd dev` )
+     4.  Enter `nvm all setup`
+     5.  Enter `nvm install 10.22`
+     6.  Enter `nvm use 10.22` . NOTE: this is older, but it’s the one Net.Create was written with.
 
 # Installing Net.Create
 
