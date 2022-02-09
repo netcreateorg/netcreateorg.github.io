@@ -163,7 +163,8 @@ You'll need to install Net.Create on a cloud server using Digital Ocean (~$5/mon
     2.  Enter `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
     3.  Close the console, reopen it, and reopen the dev folder ( `cd dev` )
     4.  Enter `nvm all setup`
-    5.  Enter `nvm use 10.22` . NOTE: this is older, but it’s the one Net.Create was written with
+    5.  Enter `nvm install 10.22`
+    6.  Enter `nvm use 10.22` . NOTE: this is older, but it’s the one Net.Create was written with.
 
 # Installing Net.Create
 
