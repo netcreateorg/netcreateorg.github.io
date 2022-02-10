@@ -153,7 +153,7 @@ You'll need to install Net.Create on a cloud server using Digital Ocean (~$5/mon
 6.  Click on Access on the left
 7.  Click on launch droplet console to access the console
 8.  Create the "shell environment variables" that NodeJS needs to figure out where it needs to install things
-    1.  Enter `touch. bashrc`
+    1.  Enter `touch .bashrc`
     2.  Enter `touch .bash_profile`
 9.  You can now create a folder for your projects
     1.  Enter `mkdir dev`
