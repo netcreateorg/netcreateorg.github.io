@@ -106,7 +106,7 @@ The Net.Create Wiki has a full set of environment, dependency and code installat
 If you are running Net.Create on an Apple with an M1 chip (or you’re not sure):
 
 - Go to your apple menu and choose “About This Mac”
-- Look at the line that starts with “Chip”. If this line reads “Chip Apple M1”, you need to enter an additional command in your terminal: `arch -x86\_64 zsh`
+- Look at the line that starts with “Chip”. If this line reads “Chip Apple M1”, you need to enter an additional command in your terminal: `arch -x86_64 zsh`
 
 ### For folks new to command-line installs
 
