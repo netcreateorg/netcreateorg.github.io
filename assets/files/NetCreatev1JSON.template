@@ -1,0 +1,165 @@
+{
+
+  "_comments":  [ "/// NetCreate Template File ///",
+                  "/// IMPORTANT: As of 1/31/2019, the following functionality is available:               ///",
+                  "///  * `label` parameter for each field may be customized                               ///",
+                  "///  * `hidden` parameter may be used to hide fields                                    ///",
+                  "///  * changing the order of the `options` WILL change their order on selections        ///",
+                  "///  * changing the order of the prompts themselves will NOT change their order         ///",
+                  "///  * `duplicateWarning` is used in NodeSelector                                       ///",
+                  "///  * `sourceNodeIsLockedMessage` is used in NodeSelector                              ///",
+                  "///  * `edgeIsLockedMessage` is used in EdgeEditor                                      ///",
+                  "/// The rest of the definitions are there as placeholders for future functionality      ///"
+  ],
+
+  "name":        "NetCreateTemplate",
+
+  "description": "A clean template file for Netcreate. Replace this description and the name of the database above. The name should use Western Roman characters only with no punctuation.",
+
+    "citationPrompts":{
+                "citation": "A citation for the network with URL if you would like each node or edge to be its own citable structure.",
+                "hidden": false
+    },
+
+
+  "nodePrompts": {
+    "label": {
+                "type":     "string",
+                "label":    "Label",
+                "help":     "A short title for the node",
+                "duplicateWarning": "You’re entering a duplicate node.  Do you want to View the Existing node, or Continue creating?",
+                "sourceNodeIsLockedMessage": "This node is currently being edited by someone else, please try again later.",
+                "includeInGraphTooltip":  true,
+                "_cmt4":    "/// `Label` is always required and cannot be hidden"
+             },
+    "type":  {
+                "type":     "select",
+                "label":    "Type",
+                "help":     "Node Type. See Key in main window for details.",
+                "hidden":   false,
+                "includeInGraphTooltip":  true,
+                "options": [
+                  {
+                    "_comment": "Default color when nothing is selected",
+                    "id":       "",
+                    "label":    "",
+                    "color":    "#EEEEEE"
+                  },
+                  {
+                    "id":    "person",
+                    "label": "Person",
+                    "help":   "A person who interacts with other people, places things",
+                    "color": "#00FF00"
+                  },
+                  {
+                    "id":    "location",
+                    "label": "Location",
+                    "help":   "A location. The notes field should be Latitude and Longitude in decimal form and comma-separated",
+                    "color": "#aabaf2"
+                  },
+                  {
+                    "id":    "thing",
+                    "label": "Thing",
+                    "help":  "A thing that can be documented.",
+                    "color": "#00FFFF"
+                  }
+                ]
+             },
+    "degrees": {
+      "type": "hidden",
+      "label": "Degrees",
+      "help": "Number of edges.",
+      "includeInGraphTooltip":  true,
+      "hidden": false
+    },
+    "notes": {
+                "type": "string",
+                "label": "Notes",
+                "help":  "Details and significance. Citation if applicable.",
+                "includeInGraphTooltip":  true,
+                "hidden": false
+              },
+    "info":  {
+                "type":     "string",
+                "label": "Tags",
+                "help":  "Comma separated set of tags to describe the node.",
+                "includeInGraphTooltip":  true,
+                "hidden": false
+              },              
+    "updated":{
+                "type":     "hidden",
+                "label": "Last update",
+                "includeInGraphTooltip": false,
+                "_cmt4": "//updated is included in the edge tables if in admin mode, and in the graph tooltip  if indicated here. Probably those should be more consistent."
+              },
+    "delete": {
+      "hidden": false
+    }
+  },
+
+
+
+  "edgePrompts": {
+    "edgeIsLockedMessage": "This edge is currently being edited by someone else, please try again later.",
+    "source":   {
+                  "type": "node",
+                  "label": "Source",
+                  "help":  "",
+                  "hidden": false
+                },
+    "type":     {
+                  "type": "select",
+                  "label": "Type",
+                  "help":  "",
+                  "hidden": false,
+                  "options": [
+                    {
+                      "id":    "notSelected",
+                      "label": ""
+                    },
+                    {
+                      "id":    "connected",
+                      "label": "is connected to"
+                    },
+                    {
+                      "id":    "interacts",
+                      "label": "interacts with"
+                    },
+                    {
+                      "id":    "visits",
+                      "label": "visits"
+                    }                  ]
+                },
+    "target":   {
+                  "type": "node",
+                  "label": "Target",
+                  "help":  "",
+                  "hidden": false
+                },
+    "notes":    {
+                  "type": "string",
+                  "label": "Notes",
+                  "help":  "",
+                  "hidden": false
+                },
+    "info":     {
+                  "type": "string",
+                  "label": "Tags",
+                  "help":  "Comma separated set of tags to describe the node.",
+                  "hidden": false
+                },
+    "citation": {
+                  "type": "string",
+                  "label": "Citation",
+                  "help":  "Enter Chapter number.",
+                  "hidden": true
+                }                ,
+    "category": {
+                  "type": "string",
+                  "label": "Category",
+                  "help":  "Category.",
+                  "hidden": true
+                }
+  }
+
+}
