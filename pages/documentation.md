@@ -245,3 +245,34 @@ You may need to stop Net.Create because you want to control who’s editing it, 
 Either way, the process is simple. Go to your terminal, which should have the Net.Create logging lines printing out. Press `CTRL-C` to interrupt the Net.Create process and get your command line back.
 
 To get the previous command you typed into the terminal (the one that starts the Net.Create network you just stopped), press the `up` arrow on your keyboard.
+
+# Data and Template files
+
+Net.Create uses two files to control each network: a data file (.loki) and a template file (.template) . The data file contains the nodes, edges and notes you've taken. The template file contains node and edge type settings, the name of the network, and the different attributes (fields in the node and edge tables).
+
+These files are stored in `~/dev/netcreate-2018/build/runtime` . Each network you've created will have its own .loki and .template file.
+
+## Change Node and Edge Types
+
+To change your node and edge types, you will need to use a text editor (TextEdit or NotePad++) to edit the .template file for your chosen network.
+
+The Node Types are created in the section of the .template file that begins with "nodePrompts" (approximately line 20 in the file). Each node type has a series of definitions:
+```
+                 {
+                    "id":    "person",
+                    "label": "Person",
+                    "color": "#aabaf2"
+                  },
+```
+The "id" needs to be a single Western-Roman-character word. The "label" can contain spaces and other characters. The "color" is a [hexadecimal color](https://htmlcolorcodes.com) that you can change at will. ***Please note: the last entry in your node and edge lists should not have the `,` comma after the last of the curly braces `}`***
+
+The Edge Types are created in the section of the .template file that begins with "edgePrompts" (location in the .template file can vary). Each edge type has a series of definitions:
+```
+                    {
+                      "id":    "interacts",
+                      "label": "interacts with"
+                    },
+```
+The "id" needs to be a single Western-Roman-character word. The "label" can contain spaces and other characters. Consider making this a partial sentence that will read well with your nodes (e.g. Person "interacts with" another person). ***Please note: the last entry in your node and edge lists should not have the `,` comma after the last of the curly braces `}`***
+
+To make these changes visible to Net.Create end-users, you will need to stop the Net.Create server (`CTRL-C` in your terminal) and restart the Net.Create server using that template (`./nc.js --dataset=YourNetworkName` when you are in the `~/dev/netcreate-2018/build/runtime/` directory in your terminal).
