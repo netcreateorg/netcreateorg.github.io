@@ -228,7 +228,7 @@ Note that on MacOS, the Net.Create server will stop when you put your Mac to sle
   - If you are opening an existing network, confirm that the network has both a `.loki` and `.template` file. Use the name of the network before the period `.` as the dataset you are opening.
   - If you are creating a new network, choose a network name with no spaces in it that does not already exist.
 - Note the name of the network you will open/create. For these examples, we will use “MyNetwork” as the network name.
-  - In the terminal, `cd` to `netcreate-2018/dev/build`
+  - In the terminal, `cd` to `~/dev/netcreate-2018/build`
   - Enter `./nc.js --dataset=MyNetwork`
   - Watch for the `MAIN APP` and `CLIENT APP` lines
     - MAIN APP will usually be http://localhost:3000
