@@ -246,13 +246,42 @@ Either way, the process is simple. Go to your terminal, which should have the Ne
 
 To get the previous command you typed into the terminal (the one that starts the Net.Create network you just stopped), press the `up` arrow on your keyboard.
 
-# Data and Template files
+# Data Entry and User Access
+
+## Giving Users Edit Permissions
+
+### Creating Access Tokens
+
+To create access tokens that will allow users to edit an open Net.Create dataset:
+- Open Chrome
+- Use the View menu to find the Developer menu item, and choose Javascript Console. The Javascript console functions much like the terminal: commands here are typed in with different variables to tell the computer to do something specific.
+- In this case, we'll use the `ncMakeTokens` command to generate access tokens. Access tokens have 4 parts
+	- The project name. A short alphanumeric string in single or double quotes (e.g. "team", "projname", "proj1")
+	- The group name within this project in single or double quotes (e.g. "blue" or "grp1" or "social"). This allows you to have several sets of groups accessing the same project, so you can track who changed what in the logs)
+	- The name of the dataset in single or double quotes. This is the name that precedes the .loki and .template in the actual names of your dataset and template files. It is case-sensitive.
+	- The number of tokens you want to generate, not in quotes. This should be a numeric value (50, rather than "fifty")
+- Type `ncMakeTokens(‘Project’,’GroupOfUsers’,’datasetname’,NoOfUsers)` and press enter.
+- Right click and choose Copy String to copy the list of Access tokens. Save these somewhere for distribution to your users.
+
+### Using Access Tokens
+
+When a user opens the CLIENT APPS url for your Net.Create install, they will need to enter an access token into the field in the upper right corner of the Net.Create app and press enter. They can bookmark the resulting URL for easy ongoing access. 
+
+Access-token-authenticated users can add and edit nodes and edges and delete edges but cannot delete nodes.
+
+### Deleting Nodes
+
+***WARNING:*** Node deletion can create serious data problems for multiple-person research teams. If a node is deleted or merged with another node by one user while a second user is adding an edge for that node (or editing that node), an edge with no corresponding node will be created, which can destabilize the entire dataset. We recommend deleting nodes only when there are no other users editing the network.
+
+A user logged in to Net.Create on the same machine as the Net.Create server using the http://localhost:3000 URL will automatically have node deletion privileges. To give a user node-deletion privileges, add `?admin=true` to the end of the URL after logging in with an access token. 
+
+## Data and Template files
 
 Net.Create uses two files to control each network: a data file (.loki) and a template file (.template) . The data file contains the nodes, edges and notes you've taken. The template file contains node and edge type settings, the name of the network, and the different attributes (fields in the node and edge tables).
 
 These files are stored in `~/dev/netcreate-2018/build/runtime` . Each network you've created will have its own .loki and .template file.
 
-## Change Node and Edge Types
+### Change Node and Edge Types
 
 To change your node and edge types, you will need to use a text editor (TextEdit or NotePad++) to edit the .template file for your chosen network.
 
