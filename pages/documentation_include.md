@@ -20,11 +20,11 @@ The first part of this guide will help you install Net.Create and keep it up to 
 
 Text before the vi include
 
-{% include_relative "./docs/bashprofilevi.md" %}
+{% include /docs/bashprofilevi.md %}
 
 Text after the vi include but before the capture include
 
-{% capture my_include %}{% include "./docs/bashprofilevi.md" %}{% endcapture %}
+{% capture my_include %}{% include /docs/bashprofilevi.md %}{% endcapture %}
 {{ my_include | markdownify }}
 
 After the markdownify
