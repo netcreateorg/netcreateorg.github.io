@@ -61,6 +61,11 @@ v 1.4 UPDATED 04/25/2022: tested on macOS 12.0.1 (Monterey) system / Digital Oce
 
 # Choose Your Platform and Type of Use
 
+| Are you:                               | Will you be using: | Do you have:         |
+|----------------------------------------|--------------------|----------------------|
+| - New to the command line?             | - MacOS?           | - A single network?  |
+| - Familiar with command-line software? | - Digital Ocean?   | - Multiple networks? |
+
 Are you:
 - New to the command line?
 - Familiar with command-line software?
