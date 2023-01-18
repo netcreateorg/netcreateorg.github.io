@@ -24,6 +24,8 @@ Net.Create is built on a Node.JS, React and D3 core and uses npm to manage its p
 
 Our [documentation](/documentation) is a work in progress but it provides [basic tutorials for new-to-the-command-line users, a full set of installation instructions for [MacOS](http://netcreate.org/documentation/#if-your-personal-computer-is-a-mac) and [Digital Ocean](http://netcreate.org/documentation/#if-your-personal-computer-is-a-windowslinux-machine), and instructions for creating user-access tokens.
 
+<p><a class="button tiny radius" href="/documentation/">Documentation</a></p>
+
 ### The Easy Version (Coming Soon)
 We're in the process of working through requirements for a downloadable double-clickable version of Net.Create. If you want to be notified of Net.Create news, please let us know through our [Contact Form](/contact/)
 

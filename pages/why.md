@@ -39,3 +39,5 @@ Live visualization does several things:
 ### Integration with Other Network Analysis Packages
 
 - Net.Create tracks its data in standard node/edge tables that can be exported to Gephi, Cytoscape, and other standard network analysis packages that support more sophisticated statistical analysis but lack support for easy team-based data-entry 
+
+<p><a class="button tiny radius" href="/documentation/">Documentation</a></p>

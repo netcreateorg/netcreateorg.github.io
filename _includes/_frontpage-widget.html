@@ -16,5 +16,5 @@
 	{% endif %}
 	<h2 class="font-size-h3 t10">{{ include.widget.title }}</h2>
 	<p>{{ include.widget.text }}</p>
-	<p><a class="button tiny radius" href="{% if include.widget.url contains 'http' %}{{ include.widget.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ include.widget.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+	{% if include.widget.more contains 'ignore'%}{% else %}<p><a class="button tiny radius" href="{% if include.widget.url contains 'http' %}{{ include.widget.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ include.widget.url }}{% endif %}">{% if include.widget.more %}{{ include.widget.more }}{% else %}{{ site.data.language.more }}{% endif %}</a></p>{% endif %}
 </div>
