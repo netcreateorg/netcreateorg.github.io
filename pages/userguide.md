@@ -1,9 +1,9 @@
----.
-layout: page.
-show_meta: false.
-title: "Simple Quick-Start Guide for Net.Create Users".
-permalink: "/userguide/".
----.
+---
+layout: page
+show_meta: false
+title: "Simple Quick-Start Guide for Net.Create Users"
+permalink: "/userguide/"
+---
 
 ## Before you start
 
