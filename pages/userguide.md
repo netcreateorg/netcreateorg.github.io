@@ -17,6 +17,9 @@ Make sure your Net.Create manager has:.
 1. Press your "return" or "enter" key to reload the page with your access token in place
 1. Create a bookmark to save your personal Net.Create data-entry web site address.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ccxgNL_1RkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ## Find Nodes and Edges
 
 The left-hand node-information pane provides a quick easy way to determine whether a node is already in the network or not.
@@ -26,6 +29,8 @@ The left-hand node-information pane provides a quick easy way to determine wheth
 	1. **If the node already exists in the network**, a drop-down menu will pop up with any matching nodes in the network. You can select your node of interest from that menu or continue typing.
 	1. **If no drop-down menu appears,** your node is not yet in the network.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/730Hopf6j5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Add a Node
 
 1. Type your node name/label in the search field at the top of the left-hand node-information pane.
@@ -34,6 +39,8 @@ The left-hand node-information pane provides a quick easy way to determine wheth
 1. ***Optional***Choose the node type from the drop-down menu and enter any other details you have on hand. ***You can also edit the node type and other details later.
 1. Press the 'Save' button.
 1. Your new node should float to the center of the network visualization and appear in the Nodes Table.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7vUTy9rGkJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Add an Edge
 
@@ -48,10 +55,13 @@ The left-hand node-information pane provides a quick easy way to determine wheth
 1. ***Optional***Enter any other details you have on hand. ***You can also edit edge details later.
 1. Press the 'Save' button.
 1. A new edge should appear between the Source node and Target node you selected.
+Add Edge https://youtu.be/fF1QWSu30Pk
 
 ## Use the Node and Edge Data Tables
 
 Network graphs are complex aggregate representations of lots of simple node-to-node data points. The Node and Edge data tables make each one of the individual data points visible in spreadsheet form.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wPRGriuaNX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Node Tables
 
@@ -75,6 +85,8 @@ To edit a node's source, type, target or other data from the Edge Table, press t
 	1. If you don't want to save your changes, press the "Cancel" button to release the node for editing by other collaborators.
 
 Because Net.Create was ***designed for simultaneous data entry by many collaborators,*** you either need to ***press the save button or the cancel button*** or the node/edge you selected for editing will remain locked and ***no one else will be able to edit it***.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GLcA2gA37Hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Understand and filter the network
 
@@ -100,3 +112,5 @@ Filtering out nodes that don't have any connections can help you see the "giant 
 1. To hide nodes with fewer than 1 connection (instead of leaving them visible but more transparent), toggle the Higlight/Filter setting by pressing the "Filter" button.
 
 You can use the filter/highlight selections to search for nodes with labels or keywords in the notes fields that match your search terms, or to hide entire categories of node or edge types.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nhupT4VZ7Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
