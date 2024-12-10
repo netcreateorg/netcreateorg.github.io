@@ -18,9 +18,9 @@ tags:
 #
 ---
 
-To cite Net.Create: Craig, K. & Danish, J. (2018). Net.Create [Computer software]. Netcreate.org (2018).
+To cite Net.Create: Craig, K. & Danish, J. (2018). Net.Create [Computer software]. Netcreate.org (2018;2023).
 
-Net.Create is funded through the [EAGER program](https://www.nsf.gov/pubs/policydocs/pappguide/nsf09_1/gpg_2.jsp#IID2){: target="_blank"} at [NSF](https://www.nsf.gov/) under award #[1848655](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1848655){: target="_blank"}.
+Net.Create is funded through the [NSF](https://www.nsf.gov/) under awards #[1848655](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1848655){: target="_blank"}, [2241705](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2241705){: target="_blank"} & [2241706](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2241706){: target="_blank"}
 
 ### The Research Team
 
