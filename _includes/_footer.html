@@ -17,7 +17,7 @@
               {% endif %}
             {% endfor %}
 
-              <ul class="no-bullet shadow-black">
+              <ul class="no-bullet">
               {% for service_item in site.data.services %}
                 {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
                   <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
@@ -35,7 +35,7 @@
               {% endif %}
             {% endfor %}
 
-            <ul class="no-bullet shadow-black">
+            <ul class="no-bullet">
             {% for network_item in site.data.network %}
               {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
                 <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>

@@ -16,7 +16,7 @@
 /* Basics
 ------------------------------------------------------------------- */
 
-$text-color:       	#111;
+$text-color:       	#304d72;
 $body-font-color: 	$text-color;
 $body-bg: 			#fdfdfd;
 
@@ -26,12 +26,12 @@ $body-bg: 			#fdfdfd;
    https://color.adobe.com/de/Flat-Design-Colors-v2-color-theme-4341903/
 ------------------------------------------------------------------- */
 
-$ci-1: #003A5E;		// dark blue
+$ci-1: #304d72;		// dark blue
 $ci-2: #C1E4F8;		// light blue
 $ci-3: #FFFEDE;		// light tan
-$ci-4: #7F7C49;		// dark tan
-$ci-5: #4bade9;		// medium blue
-$ci-6: #4bade9;     // medium
+$ci-4: #f2a141;		// dark tan
+$ci-5: #f36e40;		// medium blue
+$ci-6: #f36e40;     // medium
 
 
 
@@ -107,14 +107,14 @@ $topbar-menu-icon-color-toggled: $ci-6;
 /* Footer
 ------------------------------------------------------------------- */
 
-$footer-bg: $grey-12;
+$footer-bg: #dce3ed;
 $footer-color: #fff;
 $footer-link-color: $ci-6;
 
 
-$subfooter-bg: $grey-13;
-$subfooter-color: $grey-8;
-$subfooter-link-color: $grey-8;
+$subfooter-bg: $ci-1;
+$subfooter-color: #dce3ed;
+$subfooter-link-color: $ci-4;
 
 
 

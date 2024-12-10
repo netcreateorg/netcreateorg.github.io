@@ -5,6 +5,13 @@ title: "Simple Quick-Start Guide for Net.Create Users"
 permalink: "/userguide/"
 ---
 
+### How to use Net.Create to Make Networks
+
+Our [user guide](/netcreate-userdocs/) provides basic information on how to add and edit nodes and edges and how to "read" the network "graph" or visualization.
+
+<p><a class="button tiny radius" href="/netcreate-userdocs/">User Guide</a></p>
+
+<!--
 ## Before you start
 
 Make sure your Net.Create manager has:.
@@ -114,3 +121,4 @@ Filtering out nodes that don't have any connections can help you see the "giant 
 You can use the filter/highlight selections to search for nodes with labels or keywords in the notes fields that match your search terms, or to hide entire categories of node or edge types.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nhupT4VZ7Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+-->

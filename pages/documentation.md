@@ -6,6 +6,22 @@ teaser: "This documentation is a work in progress."
 permalink: "/documentation/"
 ---
 
+### Installation
+
+#### The Command-line Version
+
+Net.Create is built on a Node.JS, React and D3 core and uses npm to manage its packages. If you've got a computer running MacOS (or you're willing to invest $5/month in a Digital Ocean droplet), are comfortable with command line work (or willing to experiment), have admin control over your computer, and have a basic understanding of GitHub, check out the source code at [https://github.com/netcreateorg/netcreate-itest/](https://github.com/netcreateorg/netcreate-itest/).
+
+<p><a class="button tiny radius" href="https://github.com/netcreateorg/netcreate-itest/wiki/Installation-Guide">Documentation for Installation</a></p>
+
+<!--Our [installation documentation](/documentation) is a work in progress but it provides [basic tutorials for new-to-the-command-line users, a full set of installation instructions for [MacOS](http://netcreate.org/documentation/#if-your-personal-computer-is-a-mac) and [Digital Ocean](http://netcreate.org/documentation/#if-your-personal-computer-is-a-windowslinux-machine), and instructions for creating user-access tokens.-->
+
+#### The Easy Version (Coming Soon)
+
+We're in the process of working through requirements for a 1-click install version of Net.Create at Digital Ocean. If you want to be notified of Net.Create news, please let us know through our [Contact Form](/contact/)
+
+
+<!--
 If you prefer to follow installation instructions in video form, we have video-based versions of the Net.Create installation process (current as of 1 Feb 2022) in a [Net.Create playlist at YouTube](https://www.youtube.com/playlist?list=PLM39ibhMucXVuhFHzm56OQHQve-35bFTt) . *You can use the text instructions here to copy and paste the installation instructions as you follow along with the video.*
 
 
@@ -305,3 +321,4 @@ The Edge Types are created in the section of the .template file that begins with
 The "id" needs to be a single Western-Roman-character word. The "label" can contain spaces and other characters. Consider making this a partial sentence that will read well with your nodes (e.g. Person "interacts with" another person). ***Please note: the last entry in your node and edge lists should not have the `,` comma after the last of the curly braces `}`***
 
 To make these changes visible to Net.Create end-users, you will need to stop the Net.Create server (`CTRL-C` in your terminal) and restart the Net.Create server using that template (`./nc.js --dataset=YourNetworkName` when you are in the `~/dev/netcreate-2018/build/runtime/` directory in your terminal).
+-->
