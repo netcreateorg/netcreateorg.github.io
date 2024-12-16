@@ -23,7 +23,6 @@ tags:
 ### Resources
 
 - Net Create: Fact/Fiction Network
-<!-- Explanation video https://iu.mediaspace.kaltura.com/media/t/1_wehrtqts re-produce-->
 
 ### Learning Target/Goal
 
