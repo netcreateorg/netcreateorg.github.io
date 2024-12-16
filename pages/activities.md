@@ -18,24 +18,26 @@ tags:
 #
 ---
 
-### Classroom Activities
+## Classroom Activities
 
-While any research team or classroom can take advantage of Net.Create's simultaneous editing and visualization structure, the primary activity structure Net.Create supports is a two-day activity that sets students up to read a long historical source (primary or secondary) more effectively.
+While any research team or classroom can take advantage of Net.Create's simultaneous editing and visualization structure, we have several activity templates that work for different classroom sizes and age groups.
 
-It works like this:
+### Higher-Ed/College Classrooms
 
-- Day 1
-	- Divide students into groups of 3-5 (3 in a fixed-seating lecture hall; 5 if you have tables).
-	- Divide a long source that the students haven't read yet into shorter excerpts and give each group 1 excerpt.
-	- Guide students through entering nodes and edges.
-	- End class with a discussion about betweenness and centrality as guides for helping identify and understand historical significance.
-	- Give students a short reading from the source between days 1 and 2 (12-15 pages max)
-- Day 2
-	- Divide students into the same groups, but give them a different excerpt.
-	- Ask them to revise, correct, and add to their classmates' entries for that set of pages.
-	- End class with a discussion about networks as both note-taking and analysis tools for historians.
+- [College Classroom Joint Reading Activity](/activities/collegeprimarysource/). Have a complex text students struggle to understand? This activity uses a co-reading activity to help individual students in a large classroom engage with 1 or 2 pages of unfamiliar text. Net.Create helps the whole class take their new familiarity with a short excerpt and combine that expertise into a whole-class generated set of interactions and notes that students can use as an entry point to independent reading of the whole text.
 
-After both days, students leave class equipped with a historical framework they built--with all of the notes they took and Net.Create's visualization of the interactions in the source you assigned--that serve as a reference while they read the remainder of the source.
+### Middle School Classrooms
 
-This version of Net.Create needs a computer running MacOS and a little command-line skill. If you've got that (or you're willing to learn), we're happy to share the software, along with our slide deck, a list of shared features for the 7 primary and secondary sources we've used with this activity, and whatever help we can offer you and your students.
+The 1-pager lesson plans here are aligned with some common activities built into English-language-arts and social-studies state standards across the US.
+
+#### Social Studies
+
+- [Greek Mythology Network Overview](greekmyth). In this 8th-grade World History lesson plan, students will read Greek Myths and write 6 word biographies of themselves. Students then build onto a network visualization, demonstrating connections among gods, locations, mortals, and characteristics. Students will add themselves to the network, indicating gods, mortals, locations, or characteristics they identify with and analyze the interactions among the Greek nodes and their classmates’ nodes.
+- [Greek voting Network Overview](/activities/greekvoting/). In this 8th-grade World History lesson plan, students will read Greek Myths and write 6 word biographies of themselves. Students then build onto a network visualization, demonstrating connections among gods, locations, mortals, and characteristics. Students will add themselves to the network, indicating gods, mortals, locations, or characteristics they identify with and analyze the interactions among the Greek nodes and their classmates’ nodes.
+
+#### English Language Arts
+
+- [Fact/Fiction network](/activities/factfiction/). In this ELA lesson plan, students will explore a network centered on the novel 'The Book Thief' by Markus Zusak, which blends fictional characters and events with real history. Students will interact with and add to network visualizations that represent connections between factual and fictional events, places, and people from the novel.
+
+We're happy to share information about how to run Net.Create in your classroom, along with our slide deck, a list of shared features for the primary and secondary sources we've used with this activity, and whatever help we can offer you and your students.
 

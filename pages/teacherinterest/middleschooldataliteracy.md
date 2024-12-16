@@ -26,7 +26,7 @@ We are looking for 20 middle school English Language Arts or History teachers to
 
 Students can pick out individual interactions and see where they fit in a larger set of interactions, like the characters in a novel or historical figures participating in events. The things that interact (“nodes” represented by circles) and their interactions (“edges” represented by lines) help students connect data in a way that represents relationships. For example, to the right is a student-created network in which students identified characters from a novel, those characters’ interests, and the relationship among these character interests and students' own interests. Using this tool, students can see that highly connected interests, such as friends and music, result in a larger node. Students can also trace connections along edges to determine how connected different characters are. Similar networks can be used in history class to understand historical events, people, or places.
 
-### For more information on the lesson plans we've used already, 
+### For more information on the lesson plans we've used already, have a look at our [Sample Activites](/activities/)
  
 ## How It Works:
 - Professional Learning: Participate in 2 hours of virtual workshops to deepen your understanding and skills related to network visualizations.
@@ -35,7 +35,7 @@ Students can pick out individual interactions and see where they fit in a larger
 - Feedback: Share your insights in a brief survey (10-20 minutes)
 - Optional Activities: Participate in interviews, focus groups, or dissemination activities to contribute to the broader education community.
 
-# Benefits for Participants:
+## Benefits for Participants:
 - Teacher stipend: Participating teachers will receive a $400 stipend for participation in the professional learning, implementation of the network learning activity, and completion of student pre/post survey and teacher post survey.
 - Enhanced Teaching Skills: Learn new strategies and techniques related to teaching data literacy within your humanities class.
 - Professional Growth: Stay ahead of the curve with data science and literacy and contribute to groundbreaking research.
