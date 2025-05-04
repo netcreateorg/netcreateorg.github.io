@@ -40,7 +40,7 @@ Net.Create is funded through the [NSF](https://www.nsf.gov/) under awards #[1848
     - Aman Desai (Learning Sciences)
     - Nate Howard (History)
     - Megan Humburg, Ph.D. (Learning Sciences)
-    - Naomi Lau (Learning Sciences)
+    - Naomi G. Lau (Learning Sciences)
     - Jerika Miller (Learning Sciences)
     - Christina Stiso (Learning Sciences)
     - Selena Steinberg (Learning Sciences)
